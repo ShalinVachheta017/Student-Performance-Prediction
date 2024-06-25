@@ -54,7 +54,7 @@ To run the Flask application:
 - **notebooks/**: Jupyter notebooks for exploratory data analysis and model experimentation.
 - **static/**: Static files for the web application.
 - **templates/**: HTML templates for the Flask web application.
-- **app.py**: Main script to run the Flask application.
+- **application.py**: Main script to run the Flask application.
 - **requirements.txt**: List of required Python packages.
 
 ## Contributing
