@@ -77,9 +77,6 @@ We welcome contributions from the community. To contribute:
    - Provide relevant documentation and examples.
    - Ensure the code follows the project's style and passes all tests.
 
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
 ## Acknowledgements
 - This project was inspired by Krush Naik online project tutorial.
 - Special thanks to the contributors and the open-source community.
