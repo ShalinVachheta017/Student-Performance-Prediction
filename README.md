@@ -81,7 +81,7 @@ We welcome contributions from the community. To contribute:
    - Ensure the code follows the project's style and passes all tests.
 
 ## Acknowledgements
-- This project was inspired by Krush Naik online project tutorial.
+- This project was inspired by Krish Naik online project tutorial.
 - Special thanks to the contributors and the open-source community.
 
 ---
