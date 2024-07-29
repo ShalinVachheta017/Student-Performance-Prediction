@@ -47,3 +47,11 @@ def predict_datapoint():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", debug=True)
+
+'''
+after run  this file ,
+type http://127.0.0.1:5000/
+and  http://127.0.0.1:5000/predictdata
+to open the web page  
+if it wont open succesfully after running this file
+'''
