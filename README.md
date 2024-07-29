@@ -1,10 +1,9 @@
 
-# ML_Project
+# ML_Project /Student Performance Prediction
 
 ## Overview
 This project demonstrates various machine learning algorithms and their applications. It aims to provide a comprehensive understanding of machine learning concepts through practical implementation. The project includes data preprocessing, implementation of several machine learning algorithms, model evaluation, and visualization of results. The main goal is to create a solid foundation for anyone interested in machine learning by providing clear examples and explanations.
-http://127.0.0.1:5000/
-http://127.0.0.1:5000/predictdata 
+
 
 
 ## Features
