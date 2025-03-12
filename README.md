@@ -1,88 +1,101 @@
-
-# ML_Project /Student Performance Prediction
+# Student Performance Prediction
 
 ## Overview
-This project demonstrates various machine learning algorithms and their applications. It aims to provide a comprehensive understanding of machine learning concepts through practical implementation. The project includes data preprocessing, implementation of several machine learning algorithms, model evaluation, and visualization of results. The main goal is to create a solid foundation for anyone interested in machine learning by providing clear examples and explanations.
 
-
+This project leverages machine learning techniques to predict student performance based on various features such as gender, parental education level, and test preparation courses. The goal is to provide educators and stakeholders with insights to identify students who may need additional support.
 
 ## Features
-- **Data Preprocessing**: Handling missing values, feature scaling, and encoding categorical variables.
-- **Machine Learning Algorithms**: Implementation of algorithms such as Linear Regression, Logistic Regression, Decision Trees, Random Forests, Support Vector Machines, K-Nearest Neighbors, and more.
-- **Model Evaluation**: Techniques to evaluate model performance including confusion matrix, precision, recall, F1-score, and ROC-AUC.
-- **Visualization**: Graphical representation of data and model results using libraries like Matplotlib and Seaborn.
 
-## Installation
-1. Clone the repository:
+- **Data Preprocessing:** Handling missing values, encoding categorical variables, and scaling features.
+- **Model Training:** Implementing algorithms like Linear Regression, Decision Trees, and XGBoost.
+- **Web Application:** A user-friendly Flask-based web app for real-time predictions.
+- **Containerization:** Dockerized application for consistent deployment across environments.
+
+## Getting Started
+
+### Prerequisites
+
+- **Docker:** Ensure Docker is installed. [Installation Guide](https://docs.docker.com/get-docker/)
+- **Git:** For cloning the repository. [Installation Guide](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+
+### Installation
+
+1. **Clone the repository:**
    ```bash
-   git clone https://github.com/ShalinVachheta017/ML_Project.git
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd ML_Project
-   ```
-3. Create a virtual environment and activate it:
-   ```bash
-   python -m venv venv
-   # Windows
-   venv\Scripts\activate
-   # macOS/Linux
-   source venv/bin/activate
-   ```
-4. Install the required packages:
-   ```bash
-   pip install -r requirements.txt
+   git clone https://github.com/ShalinVachheta017/Student-Performance-Prediction.git
+   cd Student-Performance-Prediction
    ```
 
-## Usage
-To run the Flask application:
-1. Set the environment variable for development mode:
-   - For Windows:
-     ```cmd
-     set FLASK_ENV=development
-     ```
-   - For macOS/Linux:
-     ```bash
-     export FLASK_ENV=development
-     ```
-2. Run the application:
+2. **Build the Docker image:**
    ```bash
-   python app.py
+   docker build -t student-performance-app .
    ```
 
-## Project Structure
-- **data/**: Contains datasets used for training and testing.
-- **models/**: Includes trained models and scripts for training different algorithms.
-- **notebooks/**: Jupyter notebooks for exploratory data analysis and model experimentation.
-- **static/**: Static files for the web application.
-- **templates/**: HTML templates for the Flask web application.
-- **application.py**: Main script to run the Flask application.
-- **requirements.txt**: List of required Python packages.
+3. **Run the Docker container:**
+   ```bash
+   docker run -p 5000:5000 student-performance-app
+   ```
 
-## Contributing
-We welcome contributions from the community. To contribute:
-1. Fork the repository.
-2. Create a new branch:
-   ```bash
-   git checkout -b feature-branch
-   ```
-3. Make your changes and commit them:
-   ```bash
-   git commit -m 'Add new feature'
-   ```
-4. Push to the branch:
-   ```bash
-   git push origin feature-branch
-   ```
-5. Open a pull request. Please ensure your pull request adheres to the following guidelines:
-   - Include a clear description of the feature or fix.
-   - Provide relevant documentation and examples.
-   - Ensure the code follows the project's style and passes all tests.
+4. **Access the web application:**
+   Open your browser and navigate to `http://localhost:5000/`.
 
-## Acknowledgements
-- This project was inspired by Krish Naik online project tutorial.
-- Special thanks to the contributors and the open-source community.
+### Usage
+
+- **Home Page(http://127.0.0.1:5000/):** Provides an overview and navigation links.
+- **Prediction Page:(http://127.0.0.1:5000/predictdata  )** Input student data to receive performance predictions.
+
+### Project Structure
+
+```
+Student-Performance-Prediction/
+│
+├── src/
+│   ├── pipeline/
+│   │   ├── predict_pipeline.py
+│   │   └── train_pipeline.py
+│   ├── __init__.py
+│   └── ...
+│
+├── templates/
+│   ├── index.html
+│   └── home.html
+│
+├── application.py
+├── Dockerfile
+├── requirements.txt
+└── README.md
+```
+
+- **`src/`**: Contains the core machine learning pipelines.
+- **`templates/`**: HTML templates for the Flask web application.
+- **`application.py`**: Main Flask application file.
+- **`Dockerfile`**: Instructions to build the Docker image.
+- **`requirements.txt`**: Python dependencies.
+
+### Dockerization
+
+The application is containerized using Docker to ensure consistency across different environments. This approach simplifies deployment and scaling.
+
+**Building the Docker Image:**
+
+```bash
+docker build -t student-performance-app .
+```
+
+**Running the Docker Container:**
+
+```bash
+docker run -p 5000:5000 student-performance-app
+```
+
+These commands will set up the application in a Docker container, exposing it on port 5000.
+
+### Contributing
+
+Contributions are welcome! Please fork the repository and create a pull request with your changes.
+
+### License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
-
-Feel free to customize and expand this template further to better match your project's specifics.
