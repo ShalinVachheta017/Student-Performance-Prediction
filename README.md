@@ -1,12 +1,26 @@
 # Student Performance Prediction
 
-## In Simple Words
+## Project Summary
 
-This project uses information about students and their studies to estimate academic performance. It shows how to prepare the data, train a model, and show a prediction on a web page.
+### What is this project?
+This project uses student-related data to estimate academic performance.
 
-**Real-life example:** Imagine exploring patterns in previous test results and study-related information. The model offers an estimate for analysis, not a final judgment about a student.
+### Why is it interesting?
+It helps explore patterns in educational data and shows how prediction systems work.
+
+### How does it work?
+The data is prepared, several models are trained, and a web app displays an estimate.
+
+### Real-life example
+A school explores patterns between test preparation and results. The estimate is not a judgment about a student.
+
+### What did I learn?
+I learned preprocessing, model comparison, and connecting a prediction model to a web app.
 
 ---
+
+## Technical Documentation
+
 
 ## Overview
 
