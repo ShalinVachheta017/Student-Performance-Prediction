@@ -1,5 +1,13 @@
 # Student Performance Prediction
 
+## In Simple Words
+
+This project uses information about students and their studies to estimate academic performance. It shows how to prepare the data, train a model, and show a prediction on a web page.
+
+**Real-life example:** Imagine exploring patterns in previous test results and study-related information. The model offers an estimate for analysis, not a final judgment about a student.
+
+---
+
 ## Overview
 
 This project leverages machine learning techniques to predict student performance based on various features such as gender, parental education level, and test preparation courses. The goal is to provide educators and stakeholders with insights to identify students who may need additional support.
