@@ -2,20 +2,9 @@
 
 ## Project Summary
 
-### What is this project?
-This project uses student-related data to estimate academic performance.
+Imagine a school looking at past test results to understand patterns in student performance. This project uses student-related information to estimate academic scores. The challenge is preparing different types of information and making sure the prediction is treated as an estimate, not a fact about a person.
 
-### Why is it interesting?
-It helps explore patterns in educational data and shows how prediction systems work.
-
-### How does it work?
-The data is prepared, several models are trained, and a web app displays an estimate.
-
-### Real-life example
-A school explores patterns between test preparation and results. The estimate is not a judgment about a student.
-
-### What did I learn?
-I learned preprocessing, model comparison, and connecting a prediction model to a web app.
+I cleaned the data, compared machine learning models, and connected a model to a simple web page. Someone can enter details and see a predicted result. I learned how to build and test models and then make them usable through an application. Such predictions should support analysis, not be used alone to judge students.
 
 ---
 
